@@ -166,7 +166,7 @@ int main (void) {
 Space Iterative:
 make space
 ./main_b_space_iterative.exe
-[Space N = 1000](image/space_iterative.png)
+![Space N = 1000](image/space_iterative.png)
 
 ## Output
 It works as follows.
