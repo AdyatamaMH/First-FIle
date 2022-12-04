@@ -15,4 +15,5 @@ In the Alien Invasion project (Chapters 12, 13, and 14 of the python crash cours
 
 ## Things you will need
 - A working python program with the version 3.0 or the most updated one
+- Pip so you can install pygame
 - Pygame
