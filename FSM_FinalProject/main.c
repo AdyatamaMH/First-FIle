@@ -1,10 +1,15 @@
 #include <stdio.h>
 #include "mylib/mylib.h"
+#include <string.h>
+
 
 int main(void) {
+  char stop[10];
   int User_S, User_F, Oven_0, Oven_1, Oven_State;
   int nextState[2], result[2];
+  int i, j;
 
+  for (i = 1; i <= 1; ++j) {
   printf("This is an Automatic Oven Machine that will be simulated in C language\n");
   printf("Made by Adyatama Mahabarata_2602158626\n");
   printf("\n");
@@ -146,7 +151,14 @@ printf("Enter an oven state that you want it to be on ([1] = Cooling): \n");
     printf("|             |\n");
     printf("|_____________|\n");        
   }
+  
+  printf("Input 1 if you want to continue with the simulation. if not, enter 'stop': ");
+    scanf("%s", stop);
+    if(strcmp(stop, "stop") == 0){
+      printf("The simulation will be stopped now");
+      break;
+    }
   return 0;
 
-
+  }
 }
