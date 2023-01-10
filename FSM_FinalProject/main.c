@@ -5,7 +5,7 @@
 
 int main(void) {
   char stop[10];
-  char cont[1];
+  char cont[10];
   int User_S, User_F, Oven_0, Oven_1, Oven_State;
   int nextState[2], result[2];
 
