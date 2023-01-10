@@ -7,7 +7,6 @@ int main(void) {
   char stop[10];
   int User_S, User_F, Oven_0, Oven_1, Oven_State;
   int nextState[2], result[2];
-  int i, j;
 
   for (i = 1; i <= 1; ++j) {
   printf("This is an Automatic Oven Machine that will be simulated in C language\n");
@@ -27,7 +26,8 @@ int main(void) {
   if (User_F == 1){
     printf("Oven is in standby mode\n");
   }
-
+ 
+while(1){
 printf("Enter an oven state that you want it to be on ([1] = Preheat), ([0] = COOK): \n");
   scanf("%d", &Oven_1);
   if (Oven_1 == 1){
