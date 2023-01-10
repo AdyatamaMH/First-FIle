@@ -5,10 +5,10 @@
 
 int main(void) {
   char stop[10];
+  char cont[1];
   int User_S, User_F, Oven_0, Oven_1, Oven_State;
   int nextState[2], result[2];
 
-  for (i = 1; i <= 1; ++j) {
   printf("This is an Automatic Oven Machine that will be simulated in C language\n");
   printf("Made by Adyatama Mahabarata_2602158626\n");
   printf("\n");
@@ -18,7 +18,7 @@ int main(void) {
   if (User_S == 1){
     printf("Oven is On\n");
   }
-
+while(1){
   printf("\n");
 
   printf("Enter an oven state that you want it to be on ([1] = Standby): \n");
@@ -27,7 +27,6 @@ int main(void) {
     printf("Oven is in standby mode\n");
   }
  
-while(1){
 printf("Enter an oven state that you want it to be on ([1] = Preheat), ([0] = COOK): \n");
   scanf("%d", &Oven_1);
   if (Oven_1 == 1){
@@ -152,8 +151,11 @@ printf("Enter an oven state that you want it to be on ([1] = Cooling): \n");
     printf("|_____________|\n");        
   }
   
-  printf("Input 1 if you want to continue with the simulation. if not, enter 'stop': ");
-    scanf("%s", stop);
+  printf("Input '1' if you want to continue with the simulation. if not, enter 'stop': ");
+    scanf("%s", cont);
+    if(strcmp(cont, "1") == 0){
+        continue;
+    }
     if(strcmp(stop, "stop") == 0){
       printf("The simulation will be stopped now");
       break;
