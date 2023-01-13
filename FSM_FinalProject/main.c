@@ -13,7 +13,7 @@ int main(void) {
   printf("Made by Adyatama Mahabarata_2602158626\n");
   printf("\n");
 
-  printf("Enter an oven state that you want it to be on ([1] = ON): \n");
+  printf("Enter an oven state that you want it to be on (Button = [1] = ON): \n");
   scanf("%d", &User_S);
   if (User_S == 1){
     printf("Oven is On\n");
@@ -23,13 +23,13 @@ while(1){
   printf("\033[1;1H");
   printf("\n");
 
-  printf("Enter an oven state that you want it to be on ([1] = Standby): \n");
+  printf("Enter an oven state that you want it to be on (Button = [1] = Standby): \n");
   scanf("%d", &User_F);
   if (User_F == 1){
     printf("Oven is in standby mode\n");
   }
  
-printf("Enter an oven state that you want it to be on ([1] = Preheat), ([0] = COOK): \n");
+printf("Enter an oven state that you want it to be on (Button = [1] = Preheat), (Button = [0] = COOK): \n");
   scanf("%d", &Oven_1);
   if (Oven_1 == 1){
     printf("Oven is preheating\n");
@@ -38,7 +38,7 @@ printf("Enter an oven state that you want it to be on ([1] = Preheat), ([0] = CO
     printf("Oven is cooking the food\n");
   }
 
-printf("Enter an oven state that you want it to be on ([1] = Cooling): \n");
+printf("Enter an oven state that you want it to be on (Button = [1] = Cooling): \n");
   scanf("%d", &Oven_0);
   if (Oven_0 == 1){
     printf("Oven is cooling down and will turn off automatically\n");
@@ -153,7 +153,7 @@ printf("Enter an oven state that you want it to be on ([1] = Cooling): \n");
     printf("|_____________|\n");        
   }
   
-  printf("Input '1' if you want to continue with the simulation. if not, enter 'stop': ");
+  printf("Input Button = '1' if you want to continue with the simulation. if not, enter 'stop': ");
     scanf("%s", cont);
     if(strcmp(cont, "1") == 0){
         continue;
