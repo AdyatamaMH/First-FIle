@@ -19,6 +19,8 @@ int main(void) {
     printf("Oven is On\n");
   }
 while(1){
+  printf("\033[2J");
+  printf("\033[1;1H");
   printf("\n");
 
   printf("Enter an oven state that you want it to be on ([1] = Standby): \n");
